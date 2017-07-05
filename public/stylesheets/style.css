@@ -1,0 +1,24 @@
+* {
+	transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+	height: 100%;
+}
+
+.navbar-brand {
+	padding: 10px;
+}
+
+.thumbnail img {
+	max-height:200px;
+}
+
+.thumbnail .description {
+	color: #7f7f7f;
+}
+
+.thumbnail .price {
+	font-weight: bold;
+	font-size: 18px;
+}
