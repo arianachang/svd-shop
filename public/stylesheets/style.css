@@ -22,3 +22,16 @@
 	font-weight: bold;
 	font-size: 18px;
 }
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+#carousel-example-generic {
+	width: 85%;
+	margin: 0 auto;
+}
+
+#card-errors {
+	margin-top: 10px;
+}

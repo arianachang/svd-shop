@@ -5,10 +5,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var flash = require('connect-flash');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 var index = require('./routes/index');
-
 var app = express();
 
 // mongoose setup
@@ -31,6 +31,7 @@ app.use(session({
 	store: new MongoStore({ mongooseConnection: mongoose.connection }),
 	cookie: { maxAge: 180 * 60 * 1000 }
 }));
+app.use(flash());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(function(req, res, next) {
