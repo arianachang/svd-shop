@@ -38,33 +38,3 @@ form.addEventListener('submit', function(event) {
 		}
 	});
 });
-
-/*
-var $form = $('#checkout-form');
-
-$form.submit(function(event) {
-	//clear form of any previous errors
-	$errorElement.addClass('hidden');
-
-	//only allow user to submit form once during validation
-	$form.find('button').prop('disabled', true);
-
-	//create token
-	stripe.createToken(card).then(function(result) {
-		if(result.error) {
-			//display errors to user
-			console.log("error is " + result.error);
-			var $errorElement = $('#card-errors');
-			$errorElement.text(result.error.message);
-			$errorElement.removeClass('hidden');
-		}
-		else {
-			//send token to server
-			stripeTokenHandler(result.token);
-		}
-	});
-
-	//don't send request to server until validation
-	return false;
-});
-*/

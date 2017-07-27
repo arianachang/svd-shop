@@ -4,6 +4,8 @@
     <div id="success" class="alert alert-success {{#if noMessages}}hidden{{/if}}">
       {{successMsg}}
     </div>
+    <div id="error" class="alert alert-danger {{#if noError}}hidden{{/if}}">{{errorMsg}}
+    </div>
   </div>
 </div>
 
@@ -23,7 +25,7 @@
         				<div class="col-sm-10">
         					{{#each product.colors as |color|}}
         						<label class="radio-inline">
-        							<input type="radio" name="color" id="{{color}}" value="{{color}}">{{color}}
+        							<input type="radio" name="{{product._id}}color" id="{{color}}" value="{{color}}">{{color}}
         						</label>
         					{{/each}}
         				</div>

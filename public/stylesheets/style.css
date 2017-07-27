@@ -35,3 +35,7 @@
 #card-errors {
 	margin-top: 10px;
 }
+
+#success, #error {
+	text-align: center;
+}
