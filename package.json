@@ -20,5 +20,9 @@
     "nodemailer": "^4.0.1",
     "serve-favicon": "~2.4.2",
     "stripe": "^4.23.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "mocha": "^4.0.1"
   }
 }

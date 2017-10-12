@@ -2,6 +2,15 @@
 	transition: all 0.3s ease;
 }
 
+/*body {
+	background-color: #232323;
+	color: #f4b942;
+}
+*/
+h1, h2, h3, h4 {
+	color: #e28d2b;
+}
+
 .navbar-brand img {
 	height: 100%;
 }
@@ -18,7 +27,7 @@
 	color: #7f7f7f;
 }
 
-.thumbnail .price {
+.thumbnail .price {˜
 	font-weight: bold;
 	font-size: 18px;
 }

@@ -25,7 +25,7 @@
         				<div class="col-sm-10">
         					{{#each product.colors as |color|}}
         						<label class="radio-inline">
-        							<input type="radio" name="{{product._id}}color" id="{{color}}" value="{{color}}">{{color}}
+        							<input type="radio" name="color" id="{{color}}" value="{{color}}">{{color}}
         						</label>
         					{{/each}}
         				</div>
@@ -36,7 +36,7 @@
 							<div class="col-sm-10">
 								<select class="form-control">
 								{{#each product.sizes as |size|}}
-									<option>{{size}}</option>
+									<option name="size">{{size}}</option>
 								{{/each}}
 								</select>
 							</div>

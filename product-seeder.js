@@ -1,11 +1,11 @@
 //product-seeder.js
 
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 mongoose.connect('localhost:27017/svdshop');
 
-var Product = require('./models/product');
+const Product = require('./models/product');
 
-var products = [
+const products = [
 	new Product({
 		imagePath: 'images/hat-front.png',
 		title: 'Singer Baseball Cap',
@@ -29,9 +29,9 @@ var products = [
 	})
 ];
 
-var done = 0;
+let done = 0;
 
-for(var i=0; i<products.length; i++) {
+for(let i=0; i<products.length; i++) {
 	products[i].save((err, result) => {
 		done++;
 		if(done === products.length) {
